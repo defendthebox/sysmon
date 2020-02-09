@@ -1,0 +1,7 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Detects: Usage of the runas.exe binary -->
+<!-- Technique Tactic: Privilege Escalation -->
+<!-- lolbin_privilege_escalation_runas.xml -->
+
+<OriginalFileName name="technique_tactic=Privilege Escalation,event_description=privilege_escalation" condition="is">runas.exe</OriginalFileName>
