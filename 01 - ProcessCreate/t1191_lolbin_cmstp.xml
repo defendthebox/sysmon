@@ -1,0 +1,8 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1191 -->
+<!-- Technique Name: CMSTP -->
+<!-- Technique Tactic: Defence Evasion, Execution -->
+<!-- t1191_lolbin_cmstp.xml -->
+
+<OriginalFileName name="technique_id=T1191,technique_name=cmstp,technique_tactic=defence_evasion;execution,event_description=lolbin_cmstp" condition="is">cmstp.exe</OriginalFileName>
