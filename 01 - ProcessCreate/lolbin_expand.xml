@@ -1,0 +1,7 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Detects: Usage of the Expand lolbin -->
+<!-- Notes: If you experience too many false positives, consider adding a CommandLine contains filter for "\\" -->
+<!-- lolbin_expand.xml -->
+
+<OriginalFileName name="event_description=lolbin_expand" condition="is">expand</OriginalFileName>
