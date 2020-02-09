@@ -1,0 +1,10 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1036 -->
+<!-- Technique Name: Masquerading -->
+<!-- Technique Tactic: Defence Evasion, Execution-->
+<!-- Notes: Detects all processes originating from the Public and Administrator user profiles -->
+<!-- t1036_masquerading_execution_from_pubilc_or_administrator.xml -->
+
+<Image name="technique_id=T1036,technique_name=Masquerading,technique_tactic=defence_evasion;execution,event_description=processcreate_public" condition="begin with">c:\users\public\</Image>
+<Image name="technique_id=T1036,technique_name=Masquerading,technique_tactic=defence_evasion;execution,event_description=processcreate_administrator" condition="begin with">c:\users\administrator\</Image>
