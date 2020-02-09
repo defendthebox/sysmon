@@ -1,0 +1,7 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Detects: Enumeration via net.exe -->
+<!-- Technique Tactic: Discovery -->
+<!-- lolbin_discovery_net.xml -->
+
+<ParentImage name="technique_tactic=Discovery,event_description=enumeration" condition="is">C:\Windows\System32\net.exe</ParentImage>
