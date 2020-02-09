@@ -1,0 +1,13 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1057 -->
+<!-- Technique Name: PowerShell -->
+<!-- Technique Tactic: Defence Evasion, Execution-->
+<!-- Notes: This will detect the PowerShell binary running from an unexpected source location, even if the 'user' has renamed the powershell binary and/or changed the file hash -->
+<!-- t1057_defence_evasion_rogue_powershell_execution.xml -->
+
+<Rule groupRelation="and" name="technique_id=T1057,technique_name=PowerShell,technique_tactic=defence_evasion;execution,event_description=rogue_powershell">
+    <OriginalFileName condition="contains any">powershell.exe;powershell_ise.exe;pwsh.exe</OriginalFileName>
+    <CurrentDirectory condition="excludes">c:\windows\system32\</CurrentDirectory>
+    <CurrentDirectory condition="excludes">c:\windows\sysWOW64\</CurrentDirectory>
+</Rule>
