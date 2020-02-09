@@ -1,0 +1,9 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1089 -->
+<!-- Technique Name: Disabling Security Tools  -->
+<!-- Technique Tactic: Defence Evasion -->
+<!-- Detects: Windows Preinstallation Environment setting -->
+<!-- t1089_winpe_reg_key.xml -->
+            
+<TargetObject name="technique_id=T1089,technique_name=Disabling Security Tools,technique_tactic=defence_evasion,event_description=minint_winpe_key" condition="begin with">HKLM\system\currentcontrolset\control\minint</TargetObject>
