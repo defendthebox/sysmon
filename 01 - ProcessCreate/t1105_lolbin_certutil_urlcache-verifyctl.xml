@@ -1,0 +1,11 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1105 -->
+<!-- Technique Name: Remote File Copy -->
+<!-- Technique Tactic: Command And Control, Lateral Movement-->
+<!-- t1105_lolbin_certutil_urlcache-verifyctl.xml -->
+
+<Rule groupRelation="and" name="technique_id=T1105,technique_name=Remote File Copy,technique_tactic:c2;lateral_movement,event_description=lolbin_certutil">
+    <OriginalFileName condition="is">certutil.exe</OriginalFileName>
+    <CommandLine condition="contains any">urlcache;verifyctl</CommandLine>
+</Rule>
