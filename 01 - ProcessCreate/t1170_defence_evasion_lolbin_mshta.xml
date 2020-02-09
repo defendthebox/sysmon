@@ -1,0 +1,11 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1179 -->
+<!-- Technique Name: MSHTA -->
+<!-- Technique Tactic: Defence Evasion, Execution-->
+<!-- t1170_defence_evasion_lolbin_mshta.xml -->
+
+<Rule groupRelation="and" name="technique_id=T1170,technique_name=MSHTA,technique_tactic=defence_evasion;execution,event_description=poc_network_action">
+    <OriginalFileName condition="is">mshta.exe</OriginalFileName>
+    <CommandLine condition="contains any">http;javascript;vbscript</CommandLine>
+</Rule>
