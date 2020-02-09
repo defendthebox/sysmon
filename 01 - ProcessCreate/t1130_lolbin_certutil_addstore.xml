@@ -1,0 +1,11 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1130 -->
+<!-- Technique Name: Install Root Certificate (using certutil) -->
+<!-- Technique Tactic: Defence Evasion -->
+<!-- t1130_lolbin_certutil_addstore.xml -->
+
+<Rule groupRelation="and" name="technique_id=T1130,technique_name=Install Root Certificate,technique_tactic=defence_evasion,event_description=lolbin_certutil">
+    <OriginalFileName condition="is">certutil.exe</OriginalFileName>
+    <CommandLine condition="contains">addstore</CommandLine>
+</Rule>
