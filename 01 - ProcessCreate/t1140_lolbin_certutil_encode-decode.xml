@@ -1,0 +1,11 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1140 -->
+<!-- Technique Name: Deobfuscate/Decode Files or Information -->
+<!-- Technique Tactic: Defence Evasion -->
+<!-- t1140_lolbin_certutil_encode-decode.xml -->
+
+<Rule groupRelation="and" name="technique_id=T1140,technique_name=Deobfuscate/Decode Files or Information,technique_tactic=defence_evasion,event_description=lolbin_certutil">
+    <OriginalFileName condition="is">certutil.exe</OriginalFileName>
+    <CommandLine condition="contains any">encode;decode</CommandLine>
+</Rule>
