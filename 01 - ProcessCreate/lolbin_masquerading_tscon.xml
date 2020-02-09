@@ -1,0 +1,6 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Detects: Usage of tscon.exe, used to 'hijack' disconnected sessions -->
+<!-- lolbin_masquerading_tscon.xml -->
+
+<OriginalFileName name="technique_tactic=Masquerading,event_description=privilege_escalation" condition="is">tscon.exe</OriginalFileName>
