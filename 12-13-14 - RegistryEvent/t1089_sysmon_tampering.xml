@@ -1,0 +1,11 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1089 -->
+<!-- Technique Name: Disabling Security Tools  -->
+<!-- Technique Tactic: Defence Evasion -->
+<!-- t1089_sysmon_tampering.xml -->
+                
+<Rule groupRelation="and" name="technique_id=T1089,technique_name=Disabling Security Tools,technique_tactic=defence_evasion,event_description=rogue_sysmon_config_change">
+    <TargetObject condition="begin with">HKLM\SYSTEM\CurrentControlSet\Services\SysmonDrv\Parameters</TargetObject>
+    <Image condition="excludes">c:\windows\sysmon.exe</Image>
+</Rule>
