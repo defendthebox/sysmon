@@ -1,0 +1,11 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1118 -->
+<!-- Technique Name: InstallUtil -->
+<!-- Technique Tactic: Defense Evasion, Execution -->
+<!-- t1118_defence_evasion_lolbin_installutil.xml -->
+
+<Rule groupRelation="and" name="technique_id=T1118,technique_name=InstallUtil,technique_tactic=defence_evasion;execution,event_description=lolbin_installutil">
+    <OriginalFileName condition="is">installutil.exe</OriginalFileName>
+    <CommandLine condition="contains any">logfile=;/LogToConsole=false</CommandLine>
+</Rule>
