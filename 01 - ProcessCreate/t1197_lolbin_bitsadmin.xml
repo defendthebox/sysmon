@@ -1,0 +1,8 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1197 -->
+<!-- Technique Name: BITS Jobs  -->
+<!-- Technique Tactic: Defence Evasion, Persistence -->
+<!-- t1197_lolbin_bitsadmin.xml -->
+
+<OriginalFileName name="technique_id=T1197,technique_name=BITS Jobs,technique_tactic=defence_evasion;persistence,event_description=network_activity" condition="is">bitsadmin.exe</OriginalFileName>
