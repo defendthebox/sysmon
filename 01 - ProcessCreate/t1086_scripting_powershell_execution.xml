@@ -1,0 +1,8 @@
+<!-- Author: Chris Burns, DefendTheBox -->
+<!-- Date: 8th February 2020 -->
+<!-- Technique ID: T1086 -->
+<!-- Technique Name: PowerShell -->
+<!-- Technique Tactic: Execution -->
+<!-- t1086_scripting_powershell_execution.xml -->
+
+<OriginalFileName name="technique_id=T1086,technique_name=PowerShell,technique_tactic=execution,event_description=powershell" condition="contains any">powershell.exe;powershell_ise.exe;pwsh.exe</OriginalFileName>
